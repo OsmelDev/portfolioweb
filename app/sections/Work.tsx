@@ -1,28 +1,8 @@
+import { projects } from "@/lib/projects";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 
 function WorkSection() {
-  const projects = [
-    {
-      title: "E-commerce Platform",
-      description: "Modern shopping experience with React & Stripe",
-      tech: ["React", "Node.js", "Stripe"],
-      year: "2024",
-    },
-    {
-      title: "Task Management App",
-      description: "Collaborative workspace with real-time updates",
-      tech: ["Next.js", "Socket.io", "MongoDB"],
-      year: "2024",
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Beautiful weather app with location services",
-      tech: ["React", "OpenWeather API", "Charts.js"],
-      year: "2023",
-    },
-  ];
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -62,7 +42,9 @@ function WorkSection() {
                 <div className="font-mono text-xs text-gray-500">
                   {project.year}
                 </div>
-                <ExternalLink className="w-4 h-4 text-gray-600 group-hover:text-gray-400 transition-colors" />
+                <a href={project.git} target="_blank">
+                  <ExternalLink className="w-4 h-4 text-gray-600 group-hover:text-gray-400 transition-colors" />
+                </a>
               </div>
             </div>
             <div className="flex gap-2 flex-wrap mb-4 sm:mb-6">
