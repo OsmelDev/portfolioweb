@@ -60,6 +60,7 @@ function AboutSection() {
               <div>Tailwind CSS</div>
             </div>
           </div>
+
           <div>
             <div className="text-gray-400 mb-2">Tools</div>
             <div className="text-gray-600 space-y-1 text-xs sm:text-sm">
