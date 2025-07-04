@@ -46,7 +46,8 @@ function ContactSection() {
         className="space-y-6"
       >
         <a
-          href="mailto:alex@example.com"
+          href="mailto:oprades4@gmail.com"
+          target="_blank"
           className="block text-white hover:text-gray-300 transition-colors text-base sm:text-lg break-all"
         >
           oprades4@gmail.com
