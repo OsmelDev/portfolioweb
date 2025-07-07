@@ -55,19 +55,22 @@ function ContactSection() {
 
         <div className="flex justify-center gap-6 sm:gap-8 pt-6 sm:pt-8">
           <a
-            href="#"
+            target="_blank"
+            href="https://github.com/OsmelDev"
             className="text-gray-500 hover:text-white transition-colors"
           >
             <Github className="w-5 h-5" />
           </a>
           <a
-            href="#"
+            target="_blank"
+            href="https://linkedin.com/in/osmel-prades-423946271"
             className="text-gray-500 hover:text-white transition-colors"
           >
             <Linkedin className="w-5 h-5" />
           </a>
           <a
-            href="#"
+            target="_blank"
+            href="mailto:oprades4@gmail.com"
             className="text-gray-500 hover:text-white transition-colors"
           >
             <Mail className="w-5 h-5" />
