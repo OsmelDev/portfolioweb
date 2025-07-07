@@ -25,7 +25,7 @@ function ContactSection() {
         transition={{ delay: 0.5 }}
         className="text-2xl sm:text-3xl md:text-4xl font-light mb-6 sm:mb-8"
       >
-        Let's work together
+        Let us work together
       </motion.h2>
 
       <motion.p
