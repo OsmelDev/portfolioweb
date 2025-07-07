@@ -25,7 +25,7 @@ function AboutSection() {
         className="space-y-4 sm:space-y-6 text-gray-300 leading-relaxed"
       >
         <p className="text-base sm:text-lg">
-          I'm a passionate frontend developer who believes in the power of clean
+          I am a passionate frontend developer who believes in the power of clean
           code and thoughtful design. My journey began with curiosity about how
           digital experiences come to life.
         </p>

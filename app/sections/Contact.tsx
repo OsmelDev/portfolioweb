@@ -34,7 +34,7 @@ function ContactSection() {
         transition={{ delay: 0.7 }}
         className="text-gray-400 mb-8 sm:mb-12 leading-relaxed text-sm sm:text-base px-4"
       >
-        I'm always interested in new opportunities and collaborations. Whether
+        I am always interested in new opportunities and collaborations. Whether
         you have a project in mind or just want to say hello, feel free to reach
         out.
       </motion.p>
