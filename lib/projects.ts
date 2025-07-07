@@ -1,12 +1,5 @@
 export const projects = [
   {
-    title: "E-commerce Platform",
-    description: "Modern shopping experience with React & Stripe",
-    tech: ["React", "Node.js", "Stripe"],
-    year: "2025",
-    git: "",
-  },
-  {
     title: "Task Management App",
     description: "Collaborative workspace with real-time updates",
     tech: ["Next.js", "Nodejs", "MongoDB", "Typescript"],
