@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail } from "lucide-react";
+import Link from "next/link";
 
 function ContactSection() {
   return (
@@ -39,6 +40,20 @@ function ContactSection() {
         out.
       </motion.p>
 
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.7 }}
+        className="text-gray-400 mb-8 sm:mb-12 leading-relaxed text-sm sm:text-base px-4"
+      >
+        <Link
+          href="/cv/cv.docx"
+          className=" hover:text-accent rounded-[5px] px-4 py-3 text-center"
+        >
+          {" "}
+          Download CV
+        </Link>
+      </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
