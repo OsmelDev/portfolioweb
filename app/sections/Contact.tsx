@@ -46,13 +46,21 @@ function ContactSection() {
         transition={{ delay: 0.7 }}
         className="text-gray-400 mb-8 sm:mb-12 leading-relaxed text-sm sm:text-base px-4"
       >
-        <Link
-          href="/cv/cv.docx"
+        <a
+          href="/cv/cv.pdf"
           className=" hover:text-accent rounded-[5px] px-4 py-3 text-center"
+          style={{
+            width: "100%",
+            maxWidth: 200,
+            minWidth: 100,
+            fontSize: "1rem",
+          }}
+          target="_blank"
+          rel="noopener noreferrer"
+          download
         >
-          {" "}
-          Download CV
-        </Link>
+          <span>Download CV</span>
+        </a>
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
