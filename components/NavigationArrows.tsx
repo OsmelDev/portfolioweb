@@ -13,8 +13,6 @@ const NavigationArrows = ({
   nextSection,
   currentSection,
 }: NavigationArrowsProps) => {
-  console.log(currentSection);
-
   return (
     <div className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 z-40 flex gap-2 sm:gap-4">
       <Button
