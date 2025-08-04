@@ -1,9 +1,9 @@
 import React from "react";
 import { AnimatePresence } from "framer-motion";
-import IntroSection from "@/app/sections/Intro";
-import AboutSection from "@/app/sections/About";
-import WorkSection from "@/app/sections/Work";
-import ContactSection from "@/app/sections/Contact";
+import IntroSection from "@/src/app/sections/Intro";
+import AboutSection from "@/src/app/sections/About";
+import WorkSection from "@/src/app/sections/Work";
+import ContactSection from "@/src/app/sections/Contact";
 
 interface MainContentProps {
   currentSection: number;

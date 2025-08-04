@@ -1,14 +1,16 @@
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 export const useActions = () => {
   const [currentSection, setCurrentSection] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  
+  const t = useTranslations("Sections");
+
   const sections = [
-    { id: "intro", title: "Intro" },
-    { id: "about", title: "About" },
-    { id: "work", title: "Work" },
-    { id: "contact", title: "Contact" },
+    { id: "intro", title: t("Intro") },
+    { id: "about", title: t("About") },
+    { id: "work", title: t("Work") },
+    { id: "contact", title: t("Contact") },
   ];
 
   const nextSection = () => {

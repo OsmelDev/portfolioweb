@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 function ContactSection() {
+  const t = useTranslations("Contact");
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -16,7 +18,7 @@ function ContactSection() {
         transition={{ delay: 0.3 }}
         className="font-mono text-xs sm:text-sm text-gray-500 mb-8 sm:mb-12"
       >
-        {"~$ contact --help"}
+        {t("comment")}
       </motion.div>
 
       <motion.h2
@@ -25,7 +27,7 @@ function ContactSection() {
         transition={{ delay: 0.5 }}
         className="text-2xl sm:text-3xl md:text-4xl font-light mb-6 sm:mb-8"
       >
-        Let us work together
+        {t("subtitle")}
       </motion.h2>
 
       <motion.p
@@ -34,9 +36,7 @@ function ContactSection() {
         transition={{ delay: 0.7 }}
         className="text-gray-400 mb-8 sm:mb-12 leading-relaxed text-sm sm:text-base px-4"
       >
-        I am always interested in new opportunities and collaborations. Whether
-        you have a project in mind or just want to say hello, feel free to reach
-        out.
+        {t("description")}
       </motion.p>
 
       <motion.p
@@ -58,7 +58,7 @@ function ContactSection() {
           rel="noopener noreferrer"
           download
         >
-          <span>Download CV</span>
+          <span>{t("bottonText")}</span>
         </a>
       </motion.p>
       <motion.div
@@ -106,7 +106,7 @@ function ContactSection() {
         transition={{ delay: 1.1 }}
         className="mt-12 sm:mt-16 font-mono text-xs text-gray-600"
       >
-        {"© 2025 Osmel Prades. All rights reserved."}
+        {t("footerText")}
       </motion.div>
     </motion.div>
   );

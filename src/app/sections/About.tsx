@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 function AboutSection() {
+  const t = useTranslations("About");
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -15,7 +17,7 @@ function AboutSection() {
         transition={{ delay: 0.3 }}
         className="font-mono text-xs sm:text-sm text-gray-500 mb-6 sm:mb-8"
       >
-        {"~$ cat about.txt"}
+        {t("comment")}
       </motion.div>
 
       <motion.div
@@ -24,22 +26,11 @@ function AboutSection() {
         transition={{ delay: 0.5 }}
         className="space-y-4 sm:space-y-6 text-gray-300 leading-relaxed"
       >
-        <p className="text-base sm:text-lg">
-          I am a passionate frontend developer who believes in the power of
-          clean code and thoughtful design. My journey began with curiosity
-          about how digital experiences come to life.
-        </p>
+        <p className="text-base sm:text-lg">{t("description.text1")}</p>
 
-        <p className="text-sm sm:text-base">
-          I specialize in React, Next.js, and modern web technologies. I enjoy
-          creating interfaces that are not only functional but also delightful
-          to use.
-        </p>
+        <p className="text-sm sm:text-base">{t("description.text2")}</p>
 
-        <p className="text-sm sm:text-base">
-          When I am not coding, you can find me exploring new technologies,
-          reading about design, or enjoying coffee.
-        </p>
+        <p className="text-sm sm:text-base">{t("description.text3")}</p>
       </motion.div>
 
       <motion.div
@@ -49,7 +40,7 @@ function AboutSection() {
         className="mt-8 sm:mt-12"
       >
         <div className="font-mono text-xs text-gray-500 mb-4">
-          {"// Skills"}
+          {t("section")}
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 text-sm">
           <div>

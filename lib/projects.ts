@@ -1,3 +1,6 @@
+import { useTranslations } from "next-intl";
+
+const t = useTranslations();
 export const projects = [
   {
     title: "Task Management App",
