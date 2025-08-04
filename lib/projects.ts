@@ -7,10 +7,10 @@ export const projects = [
     git: "https://github.com/OsmelDev/TaskManagerApp",
   },
   {
-    title: "Next Player App",
-    description: "Beautiful Music Player",
-    tech: ["Nextjs", "Tailwindcss"],
+    title: "Next Aimp3 Clone",
+    description: "Beautiful Aimp Clone",
+    tech: ["Nextjs", "Typescript", "Tailwindcss"],
     year: "2025",
-    git: "https://github.com/OsmelDev/Next-Player",
+    git: "https://github.com/OsmelDev/aimp-clone",
   },
 ];
