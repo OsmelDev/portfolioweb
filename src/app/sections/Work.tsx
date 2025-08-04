@@ -1,8 +1,27 @@
-import { projects } from "@/lib/projects";
+// import { projects } from "@/lib/projects";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 function WorkSection() {
+  const t = useTranslations("Work");
+  const projects = [
+    {
+      title: t("projects.TaskManagement.title"),
+      description: t("projects.TaskManagement.description"),
+      tech: ["Next.js", "Nodejs", "MongoDB", "Typescript"],
+      year: "2025",
+      git: "https://github.com/OsmelDev/TaskManagerApp",
+    },
+    {
+      title: t("projects.NextAimp.title"),
+      description: t("projects.NextAimp.description"),
+      tech: ["Nextjs", "Typescript", "Tailwindcss"],
+      year: "2025",
+      git: "https://github.com/OsmelDev/aimp-clone",
+    },
+  ];
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -17,7 +36,7 @@ function WorkSection() {
         transition={{ delay: 0.3 }}
         className="font-mono text-xs sm:text-sm text-gray-500 mb-8 sm:mb-12"
       >
-        {"~$ ls projects/"}
+        {t("comment")}/
       </motion.div>
 
       <div className="space-y-8 sm:space-y-12">

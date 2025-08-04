@@ -10,6 +10,7 @@ import MobileMenu from "@/components/MobileMenu";
 import MobileMenuButton from "@/components/MobileMenuButton";
 import MainContent from "@/components/MainContent";
 import { useActions } from "../hooks/useActions";
+import LocaleSwitcher from "@/components/localeSwitcher";
 
 export default function MinimalPortfolio() {
   const [isLoading, setIsLoading] = useState(true);
@@ -52,7 +53,7 @@ export default function MinimalPortfolio() {
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, [isMobile]);
-
+ 
   if (isLoading) {
     return <LoadingScreen />;
   }
@@ -69,7 +70,9 @@ export default function MinimalPortfolio() {
           transition={{ type: "spring", stiffness: 500, damping: 28 }}
         />
       )}
-
+      <div className="absolute top-5 right-5 ">
+        <LocaleSwitcher />
+      </div>
       <MobileMenuButton
         isMobileMenuOpen={isMobileMenuOpen}
         setIsMobileMenuOpen={setIsMobileMenuOpen}
