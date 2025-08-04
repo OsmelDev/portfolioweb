@@ -1,6 +1,7 @@
 "use client";
 
-import { CheckIcon, LanguageIcon } from "@heroicons/react/24/solid";
+import { LanguageIcon } from "@heroicons/react/24/solid";
+
 import * as Select from "@radix-ui/react-select";
 import clsx from "clsx";
 import { useTransition } from "react";
@@ -38,32 +39,38 @@ export default function LocaleSwitcherSelect({
           )}
         >
           <Select.Icon>
-            <LanguageIcon className="h-6 w-6 text-slate-200 transition-colors hover:text-slate-900" />
+            <LanguageIcon className="h-5 w-5 text-slate-200 transition-colors hover:text-slate-900" />
           </Select.Icon>
         </Select.Trigger>
         <Select.Portal>
           <Select.Content
             align="end"
-            className="min-w-[8rem] overflow-hidden rounded-sm bg-white py-1 shadow-md"
+            className="min-w-[2rem] overflow-hidden rounded-sm bg-transparent border border-gray-800/80 shadow-md "
             position="popper"
           >
-            <Select.Viewport>
+            <Select.Viewport className="h-full flex flex-col items-center bg-transparent">
               {items.map((item) => (
                 <Select.Item
                   key={item.value}
-                  className="flex cursor-default items-center px-3 py-2 text-base data-[highlighted]:bg-slate-100"
+                  className={`bg-black ${
+                    item.value === defaultValue &&
+                    "bg-gr-600 border-0 text-white"
+                  } flex cursor-default items-center w-full justify-center`}
                   value={item.value}
                 >
-                  <div className="mr-2 w-[1rem]">
-                    {item.value === defaultValue && (
-                      <CheckIcon className="h-5 w-5 text-slate-600" />
-                    )}
-                  </div>
-                  <span className="text-slate-900">{item.label}</span>
+                  <span
+                    className={`border-0 ${
+                      item.value === defaultValue
+                        ? "text-white"
+                        : "text-gray-900"
+                    }`}
+                  >
+                    {item.label}
+                  </span>
                 </Select.Item>
               ))}
             </Select.Viewport>
-            <Select.Arrow className="fill-white text-white" />
+            <Select.Arrow className="fill-white " />
           </Select.Content>
         </Select.Portal>
       </Select.Root>

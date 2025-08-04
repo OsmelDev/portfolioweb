@@ -1,4 +1,3 @@
-// import { projects } from "@/lib/projects";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { useTranslations } from "next-intl";
