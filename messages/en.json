@@ -1,0 +1,49 @@
+{
+  "LocaleSwitcher": {
+    "es": "es",
+    "en": "en",
+    "label": "Language"
+  },
+  "Intro": {
+    "comment": "~$ whoami",
+    "name": "Osmel Prades",
+    "role": "Frontend Developer",
+    "location": "Based in Habana, Cuba"
+  },
+  "Work": {
+    "comment": "~$ projects",
+    "projects": {
+      "TaskManagement": {
+        "title": "Task Management App",
+        "description": "Collaborative workspace with real-time updates"
+      },
+      "NextAimp": {
+        "title": "Next Aimp3 Clone",
+        "description": "Beautiful and funtional Aimp Clone"
+      }
+    }
+  },
+  "About": {
+    "comment": "~$ cd about me.txt",
+    "description": {
+      "text1": "I am a passionate frontend developer who believes in the power of clean code and thoughtful design. My journey began with curiosity about how digital experiences come to life.",
+      "text2": "I specialize in React, Next.js, and modern web technologies. I enjoy creating interfaces that are not only functional but also delightful to use.",
+      "text3": "When I am not coding, you can find me exploring new technologies, reading about design, or enjoying coffee."
+    },
+    "section": "// Skills"
+  },
+  "Contact": {
+    "comment": "~$ contact --help",
+    "subtitle": "Let us work together",
+    "description": "I am always interested in new opportunities and collaborations. Whether you have a project in mind or just want to say hello, feel free to reach out.",
+    "bottonText": "Download CV",
+    "footerText": "© 2025 Osmel Prades. All rights reserved."
+  },
+  "Loading": { "loading": "~$ loading portfolio..." },
+  "Sections": {
+    "Intro": "Intro",
+    "About": "About",
+    "Work": "Work",
+    "Contact": "Contact"
+  }
+}

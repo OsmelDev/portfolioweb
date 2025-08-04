@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 function LoadingScreen() {
+  const t = useTranslations("Loading");
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white flex items-center justify-center px-4">
       <motion.div
@@ -19,7 +21,7 @@ function LoadingScreen() {
             repeat: Number.POSITIVE_INFINITY,
           }}
         >
-          {"~$ loading portfolio..."}
+          {t("loading")}
         </motion.div>
         <motion.div
           className="w-24 sm:w-32 h-0.5 bg-white mx-auto"

@@ -1,0 +1,49 @@
+{
+  "LocaleSwitcher": {
+    "es": "es",
+    "en": "en",
+    "label": "Lenguage"
+  },
+  "Intro": {
+    "comment": "~$ quien soy?",
+    "name": "Osmel Prades",
+    "role": "Desarrollador Frontend",
+    "location": "Con sede en La Habana, Cuba"
+  },
+  "Work": {
+    "comment": "~$ projectos",
+    "projects": {
+      "TaskManagement": {
+        "title": "Aplicación de gestión de tareas",
+        "description": "Espacio de trabajo colaborativo con actualizaciones en tiempo real"
+      },
+      "NextAimp": {
+        "title": "Clon de Aimp3",
+        "description": "Clon de Aimp3 hermoso y funcional"
+      }
+    }
+  },
+  "About": {
+    "comment": "~$ cd sobre mi.txt",
+    "description": {
+      "text1": "Soy un apasionado desarrollador frontend que cree en el poder del código limpio y el diseño inteligente. Mi trayectoria comenzó con la curiosidad por cómo cobran vida las experiencias digitales.",
+      "text2": "Me especializo en React, Next.js y tecnologías web modernas. Disfruto creando interfaces que no solo sean funcionales, sino también fáciles de usar.",
+      "text3": "Cuando no estoy codificando, puedes encontrarme explorando nuevas tecnologías, leyendo sobre diseño o disfrutando de un café."
+    },
+    "section": "// Habilidades"
+  },
+  "Contact": {
+    "comment": "~$ contacto --ayuda",
+    "subtitle": "Trabajemos juntos",
+    "description": "Siempre me interesan nuevas oportunidades y colaboraciones. Si tienes un proyecto en mente o simplemente quieres saludarme, no dudes en contactarme.",
+    "bottonText": "Descargar CV",
+    "footerText": "© 2025 Osmel Prades. Todos los derechos reservados."
+  },
+  "Loading": { "loading": "~$ cargando portafolio..." },
+  "Sections": {
+    "Intro": "Introduccion",
+    "About": "Sobre mi",
+    "Work": "Trabajos",
+    "Contact": "Contacto"
+  }
+}

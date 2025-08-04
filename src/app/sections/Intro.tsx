@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 function IntroSection() {
+  const t = useTranslations("Intro");
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -15,7 +17,7 @@ function IntroSection() {
         transition={{ delay: 0.3 }}
         className="font-mono text-xs sm:text-sm text-gray-500 mb-6 sm:mb-8"
       >
-        {"~$ whoami"}
+        {t("comment")}
       </motion.div>
 
       <motion.h1
@@ -24,7 +26,7 @@ function IntroSection() {
         transition={{ delay: 0.5 }}
         className="text-4xl sm:text-6xl md:text-7xl lg:text-7xl font-light mb-4 sm:mb-6 tracking-tight leading-tight"
       >
-        Osmel Prades
+        {t("name")}
       </motion.h1>
 
       <motion.p
@@ -33,7 +35,7 @@ function IntroSection() {
         transition={{ delay: 0.7 }}
         className="text-lg sm:text-xl md:text-3xl text-gray-400 font-light mb-8 sm:mb-12 px-4"
       >
-        Frontend Developer
+        {t("role")}
       </motion.p>
 
       <motion.div
@@ -42,7 +44,7 @@ function IntroSection() {
         transition={{ delay: 0.9 }}
         className="font-mono text-xs sm:text-sm text-gray-600"
       >
-        {"Based in Habana, Cuba"}
+        {t("location")}
       </motion.div>
     </motion.div>
   );
