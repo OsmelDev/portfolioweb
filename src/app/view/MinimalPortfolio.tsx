@@ -53,7 +53,7 @@ export default function MinimalPortfolio() {
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, [isMobile]);
- 
+
   if (isLoading) {
     return <LoadingScreen />;
   }
@@ -70,7 +70,7 @@ export default function MinimalPortfolio() {
           transition={{ type: "spring", stiffness: 500, damping: 28 }}
         />
       )}
-      <div className="absolute top-5 right-5 ">
+      <div className="absolute top-5 right-15 md:top-5 md:right-5  ">
         <LocaleSwitcher />
       </div>
       <MobileMenuButton
