@@ -17,7 +17,7 @@ function WorkSection() {
       description: t("projects.NextAimp.description"),
       tech: ["Nextjs", "Typescript", "Tailwindcss"],
       year: "2025",
-      git: "https://github.com/OsmelDev/aimp-clone",
+      git: "https://github.com/OsmelDev/AimpApp",
     },
   ];
 
