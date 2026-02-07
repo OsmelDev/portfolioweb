@@ -46,7 +46,7 @@ function ContactSection() {
         className="text-gray-400 mb-8 sm:mb-12 leading-relaxed text-sm sm:text-base px-4"
       >
         <a
-          href="/cv/cv.pdf"
+          href="/cv/curriculum.pdf"
           className=" hover:text-accent rounded-[5px] px-4 py-3 text-center"
           style={{
             width: "100%",
