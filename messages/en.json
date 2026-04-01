@@ -13,13 +13,17 @@
   "Work": {
     "comment": "~$ projects",
     "projects": {
-      "TaskManagement": {
-        "title": "Task Management App",
-        "description": "Collaborative workspace with real-time updates"
+      "WorkshopManagement": {
+        "title": "Workshop management",
+        "description": "Electronics workshop management system"
       },
-      "NextAimp": {
-        "title": "Next Aimp3 Clone",
-        "description": "Beautiful and funtional Aimp Clone"
+      "EconomicSystem": {
+        "title": "Economic System GestorChef",
+        "description": "Control system for food delivery businesses"
+      },
+      "AdministrationSystem": {
+        "title": "Administration System QueBola",
+        "description": "Management system for liquor manufacturing and sales businesses"
       }
     }
   },
