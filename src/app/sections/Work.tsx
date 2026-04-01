@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Link } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 function WorkSection() {
   const t = useTranslations("Work");
   const projects = [
     {
+
       title: t("projects.WorkshopManagement.title"),
       description: t("projects.WorkshopManagement.description"),
       tech: ["Next.js", "Nodejs", "MongoDB", "Typescript"],
@@ -62,13 +63,18 @@ function WorkSection() {
                   {project.description}
                 </p>
               </div>
-              <div className="flex sm:flex-col items-start sm:items-end gap-2 sm:gap-0">
+              <div className="flex sm:flex-col  items-start sm:items-end gap-2">
                 <div className="font-mono text-xs text-gray-500">
                   {project.year}
                 </div>
                 <a href={project.git} target="_blank">
                   <ExternalLink className="w-4 h-4 text-gray-600 group-hover:text-gray-400 transition-colors" />
                 </a>
+                {project.site_url && (
+                  <a href={project.site_url} target="_blank">
+                    <Link className="w-4 h-4 text-gray-600 group-hover:text-gray-400 transition-colors" />
+                  </a>
+                )}
               </div>
             </div>
             <div className="flex gap-2 flex-wrap mb-4 sm:mb-6">
