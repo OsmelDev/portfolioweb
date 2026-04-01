@@ -13,13 +13,17 @@
   "Work": {
     "comment": "~$ projectos",
     "projects": {
-      "TaskManagement": {
-        "title": "Aplicación de gestión de tareas",
-        "description": "Espacio de trabajo colaborativo con actualizaciones en tiempo real"
+      "WorkshopManagement": {
+        "title": "Gestion de taller",
+        "description": "Sistema de gestion de taller de electronica"
       },
-      "NextAimp": {
-        "title": "Clon de Aimp3",
-        "description": "Clon de Aimp3 hermoso y funcional"
+      "EconomicSystem": {
+        "title": "Sistema Economico Gestor Chef",
+        "description": "Sistema de control para emprendimientos de comida a domicilio"
+      },
+      "AdministrationSystem": {
+        "title": "Sistema de Administracion QueBola",
+        "description": "Sistema de administracion para emprendimientos de fabricacion y venta de licores"
       }
     }
   },

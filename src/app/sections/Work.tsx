@@ -6,20 +6,26 @@ function WorkSection() {
   const t = useTranslations("Work");
   const projects = [
     {
-      title: t("projects.TaskManagement.title"),
-      description: t("projects.TaskManagement.description"),
+      title: t("projects.WorkshopManagement.title"),
+      description: t("projects.WorkshopManagement.description"),
       tech: ["Next.js", "Nodejs", "MongoDB", "Typescript"],
       year: "2025",
-      git: "https://github.com/OsmelDev/TaskManagerApp",
+      git: "https://github.com/OsmelDev/Gestion-de-Taller",
     },
     {
-      title: t("projects.NextAimp.title"),
-      description: t("projects.NextAimp.description"),
-      tech: ["Nextjs", "Typescript", "Tailwindcss"],
+      title: t("projects.EconomicSystem.title"),
+      description: t("projects.EconomicSystem.description"),
+      tech: ["Nextjs", "Typescript", "Tailwindcss, Tauri"],
       year: "2025",
-      git: "https://github.com/OsmelDev/AimpApp",
+      git: "https://github.com/OsmelDev/Sistema-Economico",
+    },{
+      title: t("projects.AdministrationSystem.title"),
+      description: t("projects.AdministrationSystem.description"),
+      tech: ["Next.js", "Nodejs", "MongoDB", "Typescript"],
+      year: "2026",
+      git: "https://github.com/OsmelDev/Administration-Quebola",
     },
-  ];
+  ]; 
 
   return (
     <motion.div
