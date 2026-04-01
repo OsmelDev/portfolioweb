@@ -1,32 +1,10 @@
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { ExternalLink, Link } from "lucide-react";
+import { useData } from "../libs/data";
 
 function WorkSection() {
-  const t = useTranslations("Work");
-  const projects = [
-    {
-      title: t("projects.WorkshopManagement.title"),
-      description: t("projects.WorkshopManagement.description"),
-      tech: ["Next.js", "Nodejs", "MongoDB", "Typescript"],
-      year: "2025",
-      git: "https://github.com/OsmelDev/Gestion-de-Taller",
-    },
-    {
-      title: t("projects.EconomicSystem.title"),
-      description: t("projects.EconomicSystem.description"),
-      tech: ["Nextjs", "Typescript", "Tailwindcss, Tauri"],
-      year: "2025",
-      git: "https://github.com/OsmelDev/Sistema-Economico",
-    },{
-      title: t("projects.AdministrationSystem.title"),
-      description: t("projects.AdministrationSystem.description"),
-      tech: ["Next.js", "Nodejs", "MongoDB", "Typescript"],
-      year: "2026",
-      git: "https://github.com/OsmelDev/Administration-Quebola",
-    },
-  ]; 
-
+  const {projects, t}=useData()
+  
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -69,6 +47,11 @@ function WorkSection() {
                 <a href={project.git} target="_blank">
                   <ExternalLink className="w-4 h-4 text-gray-600 group-hover:text-gray-400 transition-colors" />
                 </a>
+                {project.site_url && (
+                  <a href={project.site_url} target="_blank">
+                    <Link className="w-4 h-4 text-gray-600 group-hover:text-gray-400 transition-colors" />
+                  </a>
+                )}
               </div>
             </div>
             <div className="flex gap-2 flex-wrap mb-4 sm:mb-6">
