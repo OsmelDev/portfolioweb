@@ -60,6 +60,12 @@ function AboutSection() {
               <div>Supabase</div>
             </div>
           </div>
+          <div>
+            <div className="text-gray-400 mb-2">Data Base</div>
+            <div className="text-gray-600 space-y-1 text-xs sm:text-sm">
+              <div>MongoDB</div>
+            </div>
+          </div>
         </div>
       </motion.div>
     </motion.div>
