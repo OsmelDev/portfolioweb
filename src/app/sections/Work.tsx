@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Link } from "lucide-react";
 import { useData } from "../libs/data";
-import { useTranslations } from "next-intl";
 
 function WorkSection() {
   const {projects, t}=useData()
