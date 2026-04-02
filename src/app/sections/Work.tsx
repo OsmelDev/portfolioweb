@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Link } from "lucide-react";
 import { useData } from "../libs/data";
+import { useTranslations } from "next-intl";
 
 function WorkSection() {
   const {projects, t}=useData()
-  
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -40,7 +41,7 @@ function WorkSection() {
                   {project.description}
                 </p>
               </div>
-              <div className="flex sm:flex-col items-start sm:items-end gap-2 sm:gap-0">
+              <div className="flex sm:flex-col  items-start sm:items-end gap-2">
                 <div className="font-mono text-xs text-gray-500">
                   {project.year}
                 </div>

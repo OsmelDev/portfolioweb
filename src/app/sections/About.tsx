@@ -57,6 +57,7 @@ function AboutSection() {
             <div className="text-gray-600 space-y-1 text-xs sm:text-sm">
               <div>Git / GitHub</div>
               <div>Vercel</div>
+              <div>Supabase</div>
             </div>
           </div>
         </div>
